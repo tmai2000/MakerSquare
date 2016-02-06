@@ -1,0 +1,33 @@
+
+html {
+	background-image: url('images/music.jpg');
+	/*background-repeat: no-repeat;*/
+	background-position: center;
+	background-size: cover;
+}
+
+div {
+	width: 80%;
+	height: 600px;
+	margin: 4cm auto;
+	/*background-color: gray;*/
+	background-color: rgba(255,255,255,.8);
+}
+
+.aboutMe{
+	color: red;
+	background-color: yellow
+}
+
+#button{
+	/* paletton.com 
+		colorpicker.com
+	   */
+
+	color:red;
+	/*r g b */
+/*	color: #ff0000; */
+	/* 0 - 255 */
+/*	color: rgb(255, 0, 0); 
+	color: rgba(255, 0, 0, .5); */
+}

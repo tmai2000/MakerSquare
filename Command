@@ -1,0 +1,67 @@
+Command d To change 
+Command / To Comment
+
+ID > #       only one name on a page
+Class > .    multiple name on page
+
+https://makersquarestudents.slack.com/messages/atx-mkp20/
+https://developer.mozilla.org/en-US/docs/web/CSS/background
+
+D Don't
+R Repeat
+Y Yourself
+
+block element
+	div
+	h1
+	p
+
+inline element
+	span 
+	<span> </span>
+	<i> </i>       italic
+	<b> </b>       bold
+
+Position
+	static
+	relative
+	absolute
+	fixed
+
+float:
+	left
+	right
+	both
+	clear (important)
+
+
+Git Commands
+git status
+git add
+git commit
+git push origin master
+
+git init
+git remote add origin https://github.com/tmai2000/getExamp.git
+git status
+
+git add .
+
+git commit -m "Initial Commit"
+
+
+git push -u origin master
+
+-- gh-pages branch - create new branch
+git checkout -b gh-pages
+git push origin gh-pages
+http://tmai2000.github.io/getExamp/
+
+ 
+
+
+
+
+
+
+
