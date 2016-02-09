@@ -57,6 +57,14 @@ git checkout -b gh-pages
 git push origin gh-pages
 http://tmai2000.github.io/getExamp/
 
+https://repl.it
+https://jsfiddle.net/
+
+document.querySelector('p#myP').textContent="Changing"
+
+
+
+
  
 
 
