@@ -36,6 +36,7 @@ float:
 
 
 Git Commands
+git checkout
 git status
 git add
 git commit
@@ -52,6 +53,7 @@ git commit -m "Initial Commit"
 
 git push -u origin master
 
+
 -- gh-pages branch - create new branch
 git checkout -b gh-pages
 git push origin gh-pages
@@ -62,6 +64,32 @@ https://jsfiddle.net/
 
 document.querySelector('p#myP').textContent="Changing"
 
+Data Type
+number - PEMDAS
+string
+boolean -> true/false
+comparator < > <= >= == !== ===
+
+typeof 5
+
+if(true){
+    
+}
+
+if(prompt ("how are you") === "good"){
+	console.log (" You are good")
+}
+else{
+	
+}
+
+&& and
+|| or
+
+var input = prompt ("How old are you?")
+
+https://checkpoint.makerpass.com/groups/mkp-20
+https://auth.makerpass.com/
 
 
 

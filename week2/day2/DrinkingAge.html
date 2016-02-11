@@ -1,0 +1,82 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Drinking Age</title>
+</head>
+<body>
+	<h1> Checking in the club </h1>
+
+	<p id="p1">Click the buttom to start checking up.</p>
+		
+	<p id="p2"> </p>
+	<p id="p3"> </p>
+
+	<button onclick="checkinClub()">Checking In Club</button>
+
+
+
+<script type="text/javascript">
+
+	function checkinClub() {
+		var name = "";
+		var age = 0;
+		var gender = "M";
+		boolean isMember = true;
+		isThirsty = true;
+		var returnText = "";
+
+		if(!isMember || age < 21){
+			if(gender === "M"){
+				returnText = "Sir, sorry, you can't go in the club! \n";
+			}
+			else{
+				returnText = "Madam, sorry, you can't go in the club! \n";
+			}
+		}
+
+		    	var p3ID = document.getElementById("p3");
+		    	p3ID.innerHTML = "returnText";
+	}
+
+	// var name = "";
+	// var age = 0;
+	// var gender = "M";
+	// boolean isMember = true;
+	// isThirsty = true;
+
+
+	// // If they are not member or if they are under age of 21,
+	// // address
+	// if(!isMember || age < 21){
+	// 	if(gender === "M"){
+	// 		alert ("Sir, sorry, you can't go in the club! \n");
+	// 	}
+	// 	else{
+	// 		alert ("Madam, sorry, you can't go in the club! \n")
+	// 	}
+	// }
+	// else{
+	// 	if(gender === "M"){
+	// 		alert ("Mr. " + name + ", you can go in the club! \n");
+	// 	}
+	// 	else{
+	// 		alert ("Mrs. " + name + ", you can go in the club! \n");
+	// 	}
+
+	// 	if(isThirsty){
+	// 		var drink = prompt("What's your favorite drink?")
+
+	// 		if(drink === "Coor light"){
+	// 			alert ("Your drink is coming right up \n");
+	// 		}
+	// 		else{
+	// 			alert ("Get out of my club \n");	
+	// 		}
+	// 	}
+
+	// }
+	
+</script>
+
+</body>
+</html>

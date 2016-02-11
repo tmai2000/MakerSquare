@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Javascript Class </title>
+		<style type="text/css"></style>
+	</head>
+	<body>
+		<h1> Testing JS </h1>
+		<h2> </h2>
+
+		<p id="p1">I am a paragraph1.</p>
+		
+		<p id="p2"> I am a paragraph2. </p>
+
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="p3"> I am a paragraph3. </p>
+
+		<script type="text/javascript">
+			// commenting
+			// alert ("What's your favarite JS? ");
+			// alert ("Your favorite JS is: " + prompt(" What's your favarite JS?"));
+
+			// var jsPrompt = prompt(" What's your favarite JS? ");
+			// document.write ("The response is: " + jsPrompt + "\n");
+
+
+			var locationHref = window.location.href;
+			var windowHeader = window.document.getElementById("header");
+			var w = window.innerWidth
+					|| document.documentElement.clientWidth
+					|| document.body.clientWidth;
+
+			var h = window.innerHeight
+			|| document.documentElement.clientHeight
+			|| document.body.clientHeight;
+
+			var whDemo = document.getElementById("p2");
+			whDemo.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".\n";
+
+			document.write ("The locationHref: " + locationHref +"\n");
+			document.write ("The windowHeader: " + windowHeader +"\n");
+
+
+			 document.write ("The wh: " + whDemo);
+
+			function myFunction() {
+		    var x = document.getElementById("p2").innerHTML;
+		    document.getElementById("p2").innerHTML = whDemo;
+			}
+
+
+		</script>
+	</body>
+</html>
