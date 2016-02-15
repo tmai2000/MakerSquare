@@ -38,20 +38,20 @@ float:
 Git Commands
 git checkout
 git status
-git add
+git add 
 git commit
 git push origin master
 
-git init
-git remote add origin https://github.com/tmai2000/getExamp.git
-git status
+1) git init
+2) git remote add origin https://github.com/tmai2000/getExamp.git
+3) git status
 
-git add .
+4) git add .
 
-git commit -m "Initial Commit"
+5) git commit -m "Initial Commit"
 
 
-git push -u origin master
+6) git push -u origin master
 
 
 -- gh-pages branch - create new branch
@@ -83,13 +83,51 @@ else{
 	
 }
 
+if(5 < 7){
+	console.log ("yes");
+}
+else{
+	console.log ("no");	
+}
+
+// if equivalent above
+(5 < 7 ? console.log("yes") : console.log("no"))
+
 && and
 || or
 
 var input = prompt ("How old are you?")
 
+var num;
+num = 1;
+num +=5; -> num = num + 5; 
+num -=1; -> num = num - 1;
+num *=3; -> num = num * 3;
+num /= .5  -> num = num / 2
+num++; -> num = num + 1;
+num--
+while (num < 10){
+	console.log(num);
+	num++;
+}
+
+document.querySelector('#the-div').textContent = "<h1> Hey, What's up </h1>"
+
+document.querySelector('#the-div').innerHTML = "<h1> Hey, What's up </h1>"
+
 https://checkpoint.makerpass.com/groups/mkp-20
 https://auth.makerpass.com/
+challenge.makersquare.com
+
+var functionName = function (parameter1, parameter2, etc){
+	// some code
+	console.log ("Hey");
+
+}
+
+https://watchandcode.com/
+http://watchandcode.com/courses/angular-course/lectures/629614
+
 
 
 

@@ -1,0 +1,25 @@
+var greeter = function (){
+    console.log("Hey Class");
+}
+
+var greeting = greeter()
+
+console.log (greeting);
+
+
+var multi = function (firstNum, secondNum){
+	return firstNum * secondNum;
+}
+
+multi(3,4);
+
+var user = function (age, gender, city){
+	console.log("Age: ", age, "Gender: ", gender, "City: ", city);
+}
+
+user(222, "Male", "Austin");
+
+var saying = function(){
+	var phrase = "Hey", "What is up?"
+}
+saying();

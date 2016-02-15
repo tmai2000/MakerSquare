@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title> Javascript Class </title>
+		<style type="text/css"></style>
+	</head>
+	<body>
+		<h1> Testing JS </h1>
+		<h2> </h2>
+​
+		<p id="p1">I am a paragraph1.</p>
+		
+		<p id="p2"> I am a paragraph2. </p>
+​
+​
+		<button onclick="CheckinClub()">Try it</button>
+​
+		<p id="p3"> I am a paragraph3. </p>
+​
+		<script type="text/javascript">
+			// commenting
+			// alert ("What's your favarite JS? ");
+			// alert ("Your favorite JS is: " + prompt(" What's your favarite JS?"));
+			
+			// var jsPrompt = prompt(" What's your favarite JS? ");
+			// document.write ("The response is: " + jsPrompt + "\n");
+​
+​
+			var locationHref = window.location.href;
+			var windowHeader = window.document.getElementById("header");
+			var w = window.innerWidth
+					|| document.documentElement.clientWidth
+					|| document.body.clientWidth;
+​
+			var h = window.innerHeight
+			|| document.documentElement.clientHeight
+			|| document.body.clientHeight;
+​
+			var p2ID = document.getElementById("p2");
+			p2ID.innerHTML = p2ID.innerHTML  + "\n Browser inner window width: " + w + ", height: " + h + ".\n";
+​
+			// document.write ("The locationHref: " + locationHref +"\n");
+			// document.write ("The windowHeader: " + windowHeader +"\n");
+​
+​
+			 // document.write ("The wh: " + p2ID);
+​
+			function CheckinClub() {
+				var name1 = "Tony";
+				var age = 21;
+				var gender = "M";
+				var isMember = true;
+				var isThirsty = true;
+				var returnText = "";
+​
+				var p1Text = "Your name is: " + name1;
+				p1Text = p1Text + "<p> </p> age: " + age;
+				var p2Text = "gender: " + gender;
+​
+		    	var p1ID = document.getElementById("p1");
+		    	p1ID.innerHTML = p1Text;
+​
+		    	var p2ID = document.getElementById("p2");
+		    	p2ID.innerHTML = p2Text;
+​
+​
+				if(!isMember || age < 21){
+					if(gender === "M"){
+						returnText = "Sir, sorry, you can't go in the club! \n";
+					}
+					else{
+						returnText = "Madam, sorry, you can't go in the club! \n";
+					}
+				}
+​
+				if(isThirsty){
+				var drink = prompt("What's your favorite drink?")
+​
+				if(drink === "Coor light"){
+					returnText = "Your drink is coming right up \n";
+				}
+				else{
+					returnText = "Get out of my club \n";	
+				}
+			}
+​
+​
+		    	var p3ID = document.getElementById("p3");
+		    	p3ID.innerHTML = returnText;
+			}
+​
+​
+		</script>
+	</body>
+</html>

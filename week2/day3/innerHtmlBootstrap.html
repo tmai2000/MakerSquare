@@ -1,0 +1,49 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<body>
+	<h1> Lyric </h1>
+<div id="lyrics"> 
+	<h1> Lyric2 </h1>
+
+</div>
+
+
+
+	<script type="text/javascript">
+		var n = 100, song = "";
+
+
+		var containerHtmlBegin = "<div id=\"container\"> <p></p> <table class=\"table-hover\"> <thead>  <tr> <th>Number</th> <th>Song line</th> </tr>  </thead> <tbody>";
+		var containerHtmlEnd = "</thead> </table> </div>";
+		song = containerHtmlBegin;
+
+		while (n >= 0){
+			if( n !== 0){
+				song =  song + "<tr class=\"active\"> <td> " + n + "</td> <b> <td> bottle of been on the wall! chug, chug, chug </td> </b> <tr>";
+			}
+			else{
+				song +=  "<tr> <td> " + n + " </td> <td> no bottles of beer! stumble, stumble, stumble.... </td> <tr> ";
+			}
+
+			n--;
+		}
+
+		song = song + containerHtmlEnd;
+		// document.querySelector('#lyrics').innerHTML = song;
+		var queryContainer = document.querySelector('.container');
+		//document.querySelector('#lyrics').textContent = song;
+		document.querySelector('#lyrics').innerHTML = song;
+//		document.querySelector('.container').innerHTML = song;
+	</script>
+</body>
+</html>

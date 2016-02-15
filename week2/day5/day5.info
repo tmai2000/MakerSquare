@@ -1,0 +1,112 @@
+var str = "James";
+
+str[str.length - 1];
+
+var str = "Hello, my name is james";
+var i=0;
+for (; i < str.length; i++){
+	console.log(str[i]);
+}
+
+var j=0;
+while (j < str.length){
+	console.log(str[j]);	
+	j++;
+}
+
+Object - collection of data with key value pair
+
+
+var me = {
+	"name" : "James",
+	"age"  : 25,
+	"gender" : "male"
+}
+
+me.name;
+me["name"]
+
+---------------------------------------------
+var person = {
+	"name" : "James",
+	age  : 25,
+	"gender" : "male"
+
+}
+
+var me2 = {
+    "p1" : person
+    
+}
+
+me2
+-----------------------------------------------
+var me = {
+	"name" : "James",
+	age  : 25,
+	"job" : "Fellow",
+	"favThing" : {
+	    "movie" : "Child",
+	    "food" : "Banana"
+	}
+}
+
+me["favThing"]["movie"]
+
+var me = {};
+
+me["height"] = 67;
+me["age"] = 24;
+
+me
+
+----------------------------------------------
+
+var car = {
+    make : "Toyota"
+};
+
+car ["model"] = "Corrola";
+
+var prop = "year";
+
+car [prop] = 2000;
+
+car [prop] = 2005
+
+car;
+
+for (var key in car){
+    console.log (key + " = " + car[key]);
+}
+
+--------------------------------------------
+
+
+array
+
+var cars = ["Saab", "Volvo", "BMW"];
+
+var me = {
+	mycar : cars
+}
+
+me.mycar.length
+
+for (var i=0; i < me.mycar.length; i++){
+    console.log (i + " " + me.mycar[i]);
+}
+
+--------------------------------------------
+
+var car = function (color, sound){
+    this.color = color;
+    this.sound = sound;
+    this.honk = function () {
+        alert("This car goes " + this.sound);
+    };
+};
+
+var honda = new car("black","beep");
+honda.honk()
+

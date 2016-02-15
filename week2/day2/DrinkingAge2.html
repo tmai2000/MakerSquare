@@ -13,7 +13,7 @@
 		<p id="p2"> I am a paragraph2. </p>
 
 
-		<button onclick="myFunction()">Try it</button>
+		<button onclick="CheckinClub()">Start Drinking</button>
 
 		<p id="p3"> I am a paragraph3. </p>
 
@@ -39,15 +39,55 @@
 			var p2ID = document.getElementById("p2");
 			p2ID.innerHTML = p2ID.innerHTML  + "\n Browser inner window width: " + w + ", height: " + h + ".\n";
 
-			document.write ("The locationHref: " + locationHref +"\n");
-			document.write ("The windowHeader: " + windowHeader +"\n");
+			// document.write ("The locationHref: " + locationHref +"\n");
+			// document.write ("The windowHeader: " + windowHeader +"\n");
 
 
-			 document.write ("The wh: " + p2ID);
+			 // document.write ("The wh: " + p2ID);
 
-			function myFunction() {
+			function CheckinClub() {
+				var name1 = "Tony";
+				var age = 21;
+				var gender = "M";
+				var isMember = true;
+				var isThirsty = true;
+				var returnText = "";
+
+				var p1Text = "Your name is: " + name1;
+				p1Text = p1Text + "<p> </p> age: " + age;
+				var p2Text = "gender: " + gender;
+
+		    	var p1ID = document.getElementById("p1");
+		    	p1ID.innerHTML = p1Text;
+
+		    	var p2ID = document.getElementById("p2");
+		    	p2ID.innerHTML = p2Text;
+
+
+				if(!isMember || age < 21){
+					if(gender === "M"){
+						returnText = "Sir, sorry, you can't go in the club! \n";
+					}
+					else{
+						returnText = "Madam, sorry, you can't go in the club! \n";
+					}
+				}
+
+				if(isThirsty){
+				var qDrink = "What's your favorite drink?";
+				var drink = prompt(qDrink);
+
+				if(drink === "Coor light"){
+					returnText = qDrink + "Your drink is coming right up \n";
+				}
+				else{
+					returnText = qDrink + "Wrong answer... Get out of my club \n";	
+				}
+			}
+
+
 		    	var p3ID = document.getElementById("p3");
-		    	p3ID.innerHTML = p3ID.innerHTML + p2ID.innerHTML;
+		    	p3ID.innerHTML = returnText;
 			}
 
 
